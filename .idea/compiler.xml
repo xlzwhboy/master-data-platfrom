@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="master-repository" />
-        <module name="master-server" />
-        <module name="master-core" />
-        <module name="master-entity" />
+        <module name="monster-server" />
+        <module name="monster-core" />
+        <module name="monster-entity" />
+        <module name="monster-repository" />
       </profile>
     </annotationProcessing>
   </component>
