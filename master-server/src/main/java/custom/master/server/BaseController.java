@@ -60,9 +60,14 @@ public class BaseController {
         return result;
 
     }
+
     protected Map<String,Object> getError(Integer code,String errMsg){
         return getResultMap(code,errMsg,null);
 
+    }
+
+    protected Map<String, Object> getResult(Object o) {
+        return getResultMap(null, o, null);
     }
 
 

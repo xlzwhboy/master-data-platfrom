@@ -1,3 +1,5 @@
+custom\master\core\util\StatefulHttpClient.class
+custom\master\core\exception\MasterExcption.class
+custom\master\core\util\JsonUtil.class
 custom\master\core\HadoopClient.class
 custom\master\core\exception\ErroeCodes.class
-custom\master\core\exception\MasterExcption.class

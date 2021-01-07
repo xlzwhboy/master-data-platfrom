@@ -1,2 +1,9 @@
+custom\master\server\controller\MonitorController.class
+custom\master\server\schedule\YarnStatusCache.class
+custom\master\server\service\MonitorService.class
+custom\master\server\schedule\HadoopMetrics.class
+custom\master\server\schedule\HadoopJmxSchedule.class
+custom\master\server\schedule\YarnStatusCache$1.class
+custom\master\server\service\Impl\MonitorServiceImpl.class
 custom\master\server\BaseController.class
 custom\master\server\MasterApplication.class

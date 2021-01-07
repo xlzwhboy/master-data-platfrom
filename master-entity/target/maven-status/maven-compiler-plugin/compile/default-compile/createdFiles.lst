@@ -1,0 +1,4 @@
+custom\master\entity\BaseEntity.class
+custom\master\entity\cluster\YarnSummary.class
+custom\master\entity\cluster\HdfsSummary.class
+custom\master\entity\cluster\QueueMetrics.class
