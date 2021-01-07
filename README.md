@@ -48,15 +48,15 @@
 
 ### 什么是Monster-data-platfrom
 
-Lin-CMS 是林间有风团队经过大量项目实践所提炼出的一套**内容管理系统框
-架**。Lin-CMS 可以有效的帮助开发者提高 CMS 的开发效率。
+Monster-data-platfrom 是林间有风团队经过大量项目实践所提炼出的一套**内容管理系统框
+架**。Monster-data-platfrom 可以有效的帮助开发者提高 data-platfrom 的开发效率。
 
 本项目是 Lin CMS 后端的 java spring-boot 实现，需要前端？请访
 问[前端仓库](https://github.com/TaleLin/lin-cms-vue)。
 
 ### Monster-data-platfrom 特点
 
-Lin CMS 的构筑思想是有其自身特点的。下面我们阐述一些 Lin 的主要特点。
+Monster-data-platfrom 的构筑思想是有其自身特点的。下面我们阐述一些 Monster-data-platfrom 的主要特点。
 
 #### Monster-data-platfrom 是一个前后端分离的 data-platfrom 解决方案
 
@@ -70,8 +70,8 @@ Lin 已经内置了 CMS 中最为常见的需求：用户管理、权限管理�
 
 #### Monster-data-platfrom 本身也是一套开发规范
 
-Lin CMS 除了内置常见的功能外，还提供了一套开发规范与工具类。
-Lin CMS 只需要开发者关注自己的业务开发，它已经内置了很多机制帮助开发者快速开发自己的业务。
+Monster-data-platfrom 除了内置常见的功能外，还提供了一套开发规范与工具类。
+Monster-data-platfrom 只需要开发者关注自己的业务开发，它已经内置了很多机制帮助开发者快速开发自己的业务。
 
 #### 扩展灵活
 
