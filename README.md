@@ -91,10 +91,6 @@ Monster-data-platfrom 是Monster大量项目实践所提炼出的一套**内容�
 #### 集群的监控和管理
 	面对很多服务器以及部署的很多大数据组件和服务
 	对集群进行完善的管理和监控可以提高数据平台的稳定性
-#### 框架本身已内置了 data-platfrom 常用的功能
-
-Lin 已经内置了 CMS 中最为常见的需求：用户管理、权限管理、日志系统等。开发者只需
-要集中精力开发自己的 CMS 业务即可
 
 #### Monster-data-platfrom 本身也是一套开发规范
 
@@ -116,15 +112,10 @@ Monster-data-platfrom 提供大量的文档来帮助开发者使用
 
 ## 联系和交流
 
-### QQ 交流群
 
-QQ 群号：643205479
+### 微信联系方式
 
-<img class="QR-img" width="258" height="300" src="http://imglf3.nosdn0.126.net/img/Qk5LWkJVWkF3Nmdyc2xGcUtScEJLOVV1clErY1dJa0FsQ3E1aDZQWlZHZ2dCbSt4WXA1V3dRPT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg">
-
-### 微信公众号
-
-微信搜索：林间有风
+微信搜索：Shihong960429
 
 <img class="QR-img" src="http://imglf6.nosdn0.126.net/img/YUdIR2E3ME5weEdlNThuRmI4TFh3UWhiNmladWVoaTlXUXpicEFPa1F6czFNYkdmcWRIbGRRPT0.jpg?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
 
