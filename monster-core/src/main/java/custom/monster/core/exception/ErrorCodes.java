@@ -1,6 +1,6 @@
 package custom.monster.core.exception;
 
-public interface ErroeCodes  {
+public interface ErrorCodes {
     //系统正常返回
     public static final int SYSTEM_SUCCESS=200;
     //系统异常

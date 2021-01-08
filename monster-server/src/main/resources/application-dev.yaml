@@ -27,12 +27,12 @@ spring:
     username: root
     password: "000000"
 
-#custom:
-#  hadoop:
-#    rm:
-#      uri: 192.168.1.102:8088
-#    nn:
-#      uri: 192.168.1.102:50070
+custom:
+  hadoop:
+    rm:
+      uri: 192.168.1.103:8088
+    nn:
+      uri: 192.168.1.102:9870
 #    conf: /home/jixin/imooc_3/naga/naga-server/src/main/resources
 #    proxyuser: hadoop
 #    hivemetastore: thrift://192.168.1.102:9083

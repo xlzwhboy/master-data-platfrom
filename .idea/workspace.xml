@@ -2,11 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c70702dc-8b00-43b3-8f6f-0b054dd1f11e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/MasterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/MasterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/OperationLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/PrivilegeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/SystemPrivilege.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/OperationLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/SystemPrivilegeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/ContextUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/JwtManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/LoginRequired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/PrivilegeCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/log/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/log/OperationObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/log/OperationRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/SystemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/SystemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/ErroeCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/ErrorCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/MasterExcption.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/MonsterException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/util/StatefulHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/util/StatefulHttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/MonitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/MonitorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopJmxSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopJmxSchedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopMetrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopMetrics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/YarnStatusCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/YarnStatusCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster-server/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster-server/target/classes/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/monster-server/target/classes/application-dev.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/功能模块指南.md" beforeDir="false" afterPath="$PROJECT_DIR$/功能模块指南.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,69 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-repository/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-server/src/main/resources/application-dev.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-entity/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-core/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/MasterApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="150">
+              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,22 +66,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopJmxSchedule.java">
+        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/AuthInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="375">
+              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/ErrorCodes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopMetrics.java">
+        <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/MonsterException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="525">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/SystemController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,16 +108,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/YarnStatusCache.java">
+        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/Impl/MonitorServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+            <state relative-caret-position="554">
+              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1458#4227#0" expanded="true" />
-                <element signature="e#4226#4227#0" expanded="true" />
-                <element signature="e#5440#5441#0" expanded="true" />
-                <element signature="e#5491#5492#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/MonitorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.5.1/hutool-all-4.5.1-sources.jar!/cn/hutool/core/date/DateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12">
+              <caret line="1408" column="7" lean-forward="true" selection-start-line="1408" selection-start-column="7" selection-end-line="1408" selection-end-column="7" />
+              <folding>
+                <element signature="e#30751#30752#0" expanded="true" />
+                <element signature="e#30818#30819#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/MonitorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1314">
+              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,6 +189,7 @@
       <find>feign-core</find>
       <find>cms</find>
       <find>spring boot</find>
+      <find>NagaException</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,19 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/HttpExeption.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/Not.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/NotFoundException.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/ForbiddenException.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/UnifyResponse.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/ExceptionCodeConfiguration.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/resources/exception-code.properties" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/CodeMessageConfiguration.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/ErroeCodes.java" />
-        <option value="$PROJECT_DIR$/master-repository/pom.xml" />
-        <option value="$PROJECT_DIR$/master-server/src/main/java/custom/master/server/MasterApplication.java" />
-        <option value="$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/MasterExcption.java" />
         <option value="$PROJECT_DIR$/master-core/pom.xml" />
         <option value="$PROJECT_DIR$/master-server/pom.xml" />
         <option value="$PROJECT_DIR$/master-entity/pom.xml" />
@@ -211,8 +235,28 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/MasterApplication.java" />
         <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/YarnStatusCache.java" />
-        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopJmxSchedule.java" />
         <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopMetrics.java" />
+        <option value="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/util/StatefulHttpClient.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/resources/application-dev.yaml" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopJmxSchedule.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/log/OperationObj.java" />
+        <option value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/OperationLog.java" />
+        <option value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/SystemPrivilege.java" />
+        <option value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/Team.java" />
+        <option value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/User.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/PrivilegeCheck.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/JwtManager.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/ContextUtil.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/SystemService.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/SystemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/UserRepository.java" />
+        <option value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/SystemPrivilegeRepository.java" />
+        <option value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/TeamRepository.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/AuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/MonsterException.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/SystemController.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/MonitorService.java" />
+        <option value="$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/MonitorController.java" />
       </list>
     </option>
   </component>
@@ -250,11 +294,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1043" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-2892" />
+    <option name="y" value="-12" />
+    <option name="width" value="2904" />
+    <option name="height" value="1584" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -265,9 +309,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="NBKnowledgePane" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,6 +372,30 @@
               <item name="custom" type="462c0819:PsiDirectoryNode" />
               <item name="monster" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="master-data-platfrom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master-data-platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="monster-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="monster" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="master-data-platfrom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master-data-platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="monster-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="monster" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="master-data-platfrom" type="b2602c69:ProjectViewProjectNode" />
@@ -591,6 +657,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="NBKnowledgePane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,7 +671,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/master-server/src/main/java/custom/master/server/schedule" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -622,15 +690,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="custom.monster.server.controller" />
       <recent name="custom.master.core.util" />
       <recent name="custom.master.server.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\monster-repository\src\main\java\custom\monster\repository\system" />
+      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\monster-server\src\main\java\custom\monster\server\service" />
+      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\monster-server\src\main\java\custom\monster\server\jwt" />
+      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\monster-server\src\main\java\custom\monster\server\log" />
       <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\master-server\src\main\java\custom\master\server\schedule" />
-      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\master-server\src\main\java\custom\master\server\service" />
-      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\master-repository\src\main\java\custom\master\repository\cluster" />
-      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\master-entity\src\main\java\custom\master\entity\cluster" />
-      <recent name="C:\Users\monster\Desktop\work\Huskie\master-data-platfrom\master-core\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -677,28 +746,26 @@
       <workItem from="1609923598453" duration="1940000" />
       <workItem from="1609937796725" duration="630000" />
       <workItem from="1609987131704" duration="21643000" />
+      <workItem from="1610070990448" duration="12395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36397000" />
+    <option name="totallyTimeSpent" value="48792000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3500404" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61580384" visible="true" weight="0.18070363" />
+      <window_info id="Structure" order="1" sideWeight="0.3841962" side_tool="true" weight="0.23454158" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.329718" />
-      <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5666075" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.26789588" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35791758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -711,6 +778,8 @@
       <window_info anchor="bottom" id="JRebel Console" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -728,187 +797,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.3.RELEASE/spring-boot-dependencies-2.1.3.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8850">
-          <caret line="354" column="12" selection-start-line="354" selection-start-column="12" selection-end-line="354" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/HadoopClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/HttpExeption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/NotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/resources/exception-code.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/ExceptionCodeConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/resources/code-message.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/ForbiddenException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/CodeMessageConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="31" column="64" lean-forward="true" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#312#356#0" expanded="true" />
-            <element signature="e#580#597#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-core/src/main/java/custom/master/core/exception/UnifyResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../../jdk1.8/src.zip!/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="21" />
-          <folding>
-            <element signature="e#1175#1176#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-            <element signature="e#2364#2365#0" expanded="true" />
-            <element signature="e#2401#2402#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3106#3107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/MasterExcption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/ErroeCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../../jdk1.8/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1172">
-          <caret line="493" column="62" selection-start-line="493" selection-start-column="62" selection-end-line="493" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/cluster/QueueMetrics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/cluster/YarnSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-server/src/main/java/custom/master/server/service/MetaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-server/src/main/java/custom/master/server/service/MetaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1950">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/util/StatefulHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/util/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -942,42 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/Impl/MonitorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/MonitorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/MonitorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1726">
-          <caret line="81" column="44" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -988,33 +840,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2975">
+            <caret line="119" column="31" lean-forward="true" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/resources/application.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/cluster/HdfsSummary.java">
+    <entry file="file://$PROJECT_DIR$/monster-repository/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="625">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/monster-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="1650">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -1027,60 +882,9 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/monster-entity/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-repository/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2975">
-            <caret line="119" column="31" lean-forward="true" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/resources/application-dev.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/MasterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/YarnStatusCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
+        <state relative-caret-position="650">
           <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1092,23 +896,367 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopJmxSchedule.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4-sources.jar!/org/apache/http/HttpHost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="289">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.5.1/hutool-all-4.5.1-sources.jar!/cn/hutool/json/JSONUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#7114#7115#0" expanded="true" />
+            <element signature="e#7167#7168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/util/StatefulHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="112" column="15" selection-start-line="112" selection-start-column="15" selection-end-line="112" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2698#2699#0" expanded="true" />
+            <element signature="e#2729#2730#0" expanded="true" />
+            <element signature="e#2784#2785#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2998#2999#0" expanded="true" />
+            <element signature="e#7450#7556#1" />
+            <element signature="e#7565#7852#0" />
+            <element signature="e#7881#7923#0" />
+            <element signature="docComment;method#download#0;class#StatefulHttpClient#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopMetrics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="207">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/cluster/QueueMetrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/cluster/YarnSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/MasterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/schedule/HadoopJmxSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/cluster/HdfsSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/log/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/log/OperationRecord.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/log/OperationObj.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/PrivilegeCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/LoginRequired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/JwtManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/InterceptorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/ContextUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/SystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/SystemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/OperationLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/PrivilegeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/SystemPrivilege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-entity/src/main/java/custom/monster/entity/system/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/OperationLogRepository.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/SystemPrivilegeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/TeamRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-repository/src/main/java/custom/monster/repository/system/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/ErrorCodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/jwt/AuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/MonitorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/MonitorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.5.1/hutool-all-4.5.1-sources.jar!/cn/hutool/core/date/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="1408" column="7" lean-forward="true" selection-start-line="1408" selection-start-column="7" selection-end-line="1408" selection-end-column="7" />
+          <folding>
+            <element signature="e#30751#30752#0" expanded="true" />
+            <element signature="e#30818#30819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/controller/SystemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-server/src/main/java/custom/monster/server/service/Impl/MonitorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monster-core/src/main/java/custom/monster/core/exception/MonsterException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
         </state>
       </provider>
     </entry>

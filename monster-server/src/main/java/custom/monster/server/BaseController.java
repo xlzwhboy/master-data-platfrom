@@ -1,7 +1,7 @@
 package custom.monster.server;
 
-import custom.monster.core.exception.ErroeCodes;
-import custom.monster.core.exception.MasterExcption;
+import custom.monster.core.exception.ErrorCodes;
+import custom.monster.core.exception.MonsterException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -31,12 +31,12 @@ public class BaseController {
     @ResponseBody
     public Map<String,Object> exceptionHandle(Exception e, HttpServletResponse response){
         //1.检测异常是否为我们自己定义的MasterException,如果是那就是主动抛出的异常
-        if (MasterExcption.class.isAssignableFrom(e.getClass())){
-            MasterExcption ma = (MasterExcption)e;
+        if (MonsterException.class.isAssignableFrom(e.getClass())){
+            MonsterException ma = (MonsterException)e;
             return getResultMap(ma.getErrorCode(),ma.getErrorMessage(),null);
 
         }else{ //否则就是运行时异常
-            return getError(ErroeCodes.SYSTEM_EXCEPTION,e.getMessage());
+            return getError(ErrorCodes.SYSTEM_EXCEPTION,e.getMessage());
         }
     }
 
@@ -45,7 +45,7 @@ public class BaseController {
         HashMap<String,Object> result = new HashMap<String, Object>();
 
         result.put("currentTime", currentTime);
-        if (code == null || code.equals(ErroeCodes.SYSTEM_SUCCESS)){
+        if (code == null || code.equals(ErrorCodes.SYSTEM_SUCCESS)){
             result.put("code", code);
             result.put("data", data);
         }else{

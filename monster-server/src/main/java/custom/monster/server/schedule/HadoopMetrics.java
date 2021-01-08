@@ -20,9 +20,8 @@ public class HadoopMetrics{
         if (beans.isEmpty()){
             return null;
         }
-        for (Map<String, Object> bean : beans) {
-            return bean.get(name);
-        }
-        return
+        //get(0)获取到list里面的map.通过key到map中查出val
+        return beans.get(0).getOrDefault(name, null);
+
     }
 }

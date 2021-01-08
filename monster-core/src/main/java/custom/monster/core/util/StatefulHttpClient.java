@@ -35,9 +35,15 @@ public class StatefulHttpClient {
 
   private HttpClientContext context;
   private CloseableHttpClient httpclient;
-  private int requestTimeOut = 15;
-  private int sessionTimeOut = 60;
+  private int requestTimeOut = 15; //请求超时时间
+  private int sessionTimeOut = 60; //会话超时时间
 
+  /**
+   * 得到我们的http客户端
+   * @param sessionTimeOut:会话超时时间
+   * @param requestTimeOut:请求超时时间
+   * @param proxy:代理(包含:远程主机名,端口,scheam)
+   */
   public StatefulHttpClient(int sessionTimeOut, int requestTimeOut,
                             HttpHost proxy) {
     initCookieStore();
@@ -141,7 +147,7 @@ public class StatefulHttpClient {
       if (result == null || result.length() == 0) {
         return null;
       }
-      return JSONUtil.toBean(result, clazz);
+      return JSONUtil.toBean(result, clazz);  //核心：将result这个json字符串转为实体类，返回出去
     } finally {
       if (entity != null) {
         EntityUtils.consume(entity);

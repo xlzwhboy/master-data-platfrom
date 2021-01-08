@@ -19,6 +19,7 @@ import java.util.*;
 @Component
 @Slf4j
 public class HadoopJmxSchedule {
+    //获取jmx首先我们要知道nameNode和ResourceManager的url地址
     @Value("${custom.hadoop.nn.uri}")
     private String nnUriStr;
     @Value("${custom.hadoop.rm.uri}")
@@ -34,17 +35,19 @@ public class HadoopJmxSchedule {
     public static final String FSNAMESYSTEMSTATE = "Hadoop:service=NameNode,name=FSNamesystemState";
     public static final String QUEUEMETRICS = "Hadoop:service=ResourceManager,name=QueueMetrics,q0=root";
     public static final String CLUSTERMETRICS = "Hadoop:service=ResourceManager,name=ClusterMetrics";
-
     public static final String QUEUEMETRICSALL = "Hadoop:service=ResourceManager,name=QueueMetrics,*";
 
     //获取active namenode uri
     private String getActiveNameNodeUri(List<String> nameNodeUri) throws IOException {
         String activeNameNodeUri = nameNodeUri.get(0);
+        //如果是两个地址,要判断哪个是活跃节点
         if (nameNodeUri.size() > 1) {
             for (String uri :
                     nameNodeUri) {
                 String fsNameSystemUrl = String.format(JMXSERVERURLFORMAT, uri, FSNAMESYSTEM);
+                //HadoopMetricss是我们自己定义的一个实体类,来接jmx页面返回的json数据
                 HadoopMetrics hadoopMetrics = client.get(HadoopMetrics.class, fsNameSystemUrl, null, null);
+                //判断是否是活跃节点
                 if (hadoopMetrics.getMetricsValue("tag.HAState").toString().equals("active")) {
                     activeNameNodeUri = uri;
                     break;
@@ -80,6 +83,7 @@ public class HadoopJmxSchedule {
         try {
             HdfsSummary hdfsSummary = reportHdfsSummary(client);
             if (hdfsSummary != null) {
+                //定时将最新的hdfs数据存储到mysql中
                 monitorService.addHdfsSummary(hdfsSummary);
             }
         } catch (IOException e) {
@@ -164,6 +168,7 @@ public class HadoopJmxSchedule {
 
     private HdfsSummary reportHdfsSummary(StatefulHttpClient client) throws IOException {
         //调用get active namenode uri
+        //有可能会有高可用的情况,所以做一个切分
         List<String> nameNodeUris = Arrays.asList(nnUriStr.split(";"));
         if (nameNodeUris.isEmpty()) {
             return null;
