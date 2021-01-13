@@ -31,25 +31,12 @@
   <a href="##联系和交流">联系和交流</a>
 </p>
 
-## 预览
-
-### 线上 demo
-
-[http://face.cms.7yue.pro/](http://face.cms.7yue.pro/)
-
-### 文档地址
-
-[http://doc.cms.talelin.com/](http://doc.cms.talelin.com/)
-
 ## 简介
 
 ### 什么是Monster-data-platfrom
 
 Monster-data-platfrom 是Monster大量项目实践所提炼出的一套**内容管理系统框
 架**。Monster-data-platfrom可以有效的帮助开发者提高数据平台的开发效率。
-
-本项目是 Lin CMS 后端的 java spring-boot 实现，需要前端？请访
-问[前端仓库](https://github.com/TaleLin/lin-cms-vue)。
 
 ### Monster-data-platfrom所解决的问题
 ##### 1.量变引起质变
@@ -101,31 +88,4 @@ Monster-data-platfrom 支持Python、Scala、Java插件化能更加便捷地增�
 #### 前端支持
 
 Monster-data-platfrom 也有自己的前端实现，强强联合为你助力。
-
-#### 完善的文档
-
-Monster-data-platfrom 提供大量的文档来帮助开发者使用
-
-
-## 联系和交流
-
-
-### 微信联系方式
-
-微信搜索：Shihong960429
-
-<img class="QR-img" src="http://imglf6.nosdn0.126.net/img/YUdIR2E3ME5weEdlNThuRmI4TFh3UWhiNmladWVoaTlXUXpicEFPa1F6czFNYkdmcWRIbGRRPT0.jpg?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
-
-## 注意事项
-
-- 目前正处于测试，勿使用在开发环境中！！！
-
-- Monster-data-platfrom 需要一定的基础，至少你得有一定的 java 基础和数据库基础，并且比较熟悉spring-boot和mybatis，
-当然如果你是个 java 程序员，这些肯定都不在话下。
-
-
-- Monster-data-platfrom 基于 spring boot ，因此也采取了 spring boot 的 starter （启动器）机制，我们也有自己的
-starter。 
-
-
 
