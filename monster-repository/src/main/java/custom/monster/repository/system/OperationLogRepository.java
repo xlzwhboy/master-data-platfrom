@@ -1,6 +1,6 @@
 package custom.monster.repository.system;
 
-import imooc.naga.entity.system.OperationLog;
+import custom.monster.entity.system.OperationLog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
